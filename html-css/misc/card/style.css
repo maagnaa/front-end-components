@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.card{
+    font-family: "Pacifico", cursive;
+    width:210px;
+    color: #231942;
+    background: linear-gradient(180deg, #f8edeb 0%,  #fcd5ce 100%);
+    border:2px #231942 solid;
+    border-radius:5px;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+img{
+    width:200px;
+    border: 5px #e5989b solid;
+    border-radius: 50%;
+}
