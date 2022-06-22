@@ -1,2 +1,2 @@
-# LiveView 
-[CodePen.io](https://codepen.io/mknordgard/full/poaXRoO)
+# Animated Gradient Text
+**LiveView** @ [CodePen.io](https://codepen.io/mknordgard/full/poaXRoO)
