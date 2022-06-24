@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Staatliches&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    --light-grey: #e2dfdf;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #43aa8b 0%, #4d908e 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--light-grey);
+    margin: 0;
+    border: 2px solid black;
+
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 4em;
+}
+
+article {
+    margin-top: 2%;
+    margin-left: 20vw;
+    width: 60vw;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: var(--light-grey);
+}
+
+.btn-display {
+    box-sizing: border-box;
+    margin: 2em 2em 2em 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Class A */
+/* ---------------------------------------------------------------------------------- */
+.btn-class-a {
+    border-radius: 0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+#btn-A1 {
+    --background-color: #f94144;
+    --hover: #f9414494;
+    --active: #FFFFFF;
+    transition: 200ms;
+
+}
+
+#btn-A1:hover{
+    background-color:var(--background-color);
+    box-shadow:  0 0 0.1em 0.1em var(--hover);
+}
+
+#btn-A1:active{
+    color: var(--active);
+    transform: translate(0em,0.2em);
+    -webkit-transform: translate(0em,0.2em);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+#btn-A2 {
+    --background-color: #f8961e;
+    --hover: #f9c74f;
+    --active: #FFFFFF;
+    transition: 500ms;
+}
+
+#btn-A2:hover,
+#btn-A2:focus {
+    box-shadow: inset -4em 0 0 0 var(--hover), inset 4em 0 0 0 var(--hover);
+}
+#btn-A2:active{
+    color: var(--active);
+}
+
+/* ---------------------------------------------------------------------------------- */
+#btn-A3 {
+    --background-color: #43aa8b;
+    --hover: #4d908e;
+    --active: #FFFFFF;
+}
+
+#btn-A3:hover,
+#btn-A3:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+#btn-A3:active{
+    color: var(--active);
+}
+
+/* ---------------------------------------------------------------------------------- */
+#btn-A4 {
+    --background-color: #4d908e;
+    --hover: #43aa8b;
+    --active: #FFFFFF;
+}
+
+#btn-A4:hover,
+#btn-A4:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+#btn-A4:active{
+    color: var(--active);
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Class B */
+/* ---------------------------------------------------------------------------------- */
+.btn-class-b {
+    border-radius: 0.2em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+#btn-B1 {
+    --background-color: #f94144;
+    --hover: #000000;
+    --hover-color: #FFFFFF;
+    background: linear-gradient(90deg,var(--hover) 50%, var(--background-color) 50%);
+    background-position: 8em;
+    background-size: 16em 6em;
+    transition: 300ms ease-in-out;
+}
+
+#btn-B1:hover{
+    background-position: 0;
+    color: var(--hover-color);
+}
+#btn-B1:active{
+    transform: translate(0em,0.2em);
+    -webkit-transform: translate(0em,0.2em);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+#btn-B2 {
+    --background-color: #f8961e;
+    --hover: #000000;
+    --hover-color: #FFFFFF;
+    background: linear-gradient(90deg,var(--hover) 50%, var(--background-color) 50%);
+    background-position: 7.5em;
+    background-size: 16em 8em;
+    transition: background 300ms ease-in-out;
+}
+
+#btn-B2:hover{
+    background-position: 16em;
+    color: var(--hover-color);
+}
+#btn-B2:active{
+    transform: translate(0em,0.2em);
+    -webkit-transform: translate(0em,0.2em);
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+#btn-B3 {
+    --background-color: #43aa8b;
+    --hover: #4d908e;
+    --active: #FFFFFF;
+}
+
+#btn-B3:hover,
+#btn-B3:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+#btn-B3:active{
+    color: var(--active);
+}
+
+/* ---------------------------------------------------------------------------------- */
+#btn-B4 {
+    --background-color: #4d908e;
+    --hover: #577590;
+    --active: #FFFFFF;
+    transition: 500ms;
+}
+
+#btn-B4:hover,
+#btn-B4:focus {
+    box-shadow: inset -4em 0 0 0 var(--hover), inset 4em 0 0 0 var(--hover);
+}
+#btn-B4:active{
+    color: var(--active);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+button {
+    height: 3em;
+    width: 10em;
+    margin: 2em;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2em;
+    border: 0.25em solid black;
+    background-color: var(--background-color);
+}
