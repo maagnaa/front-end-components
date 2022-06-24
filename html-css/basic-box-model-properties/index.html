@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Box-Model Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic Box-Model Properties</h1>
+    </header>
+
+    <h2> CSS Property: box-sizing. </h2>
+    <p> Div [1.1] and [1.2] have the same width, but different box-sizing.</p>
+
+    <article class="example" id="boxsizing">
+        <div>
+            <h3>[1.1] box-sizing: border-box</h3>
+            <p> The border width does not affect the total width of the container.</p>
+        </div>
+        <div>
+            <h3>[1.2] box-sizing: content-box</h3>
+            <p> The border width comes in addition to the width of the container.</p>
+        </div>
+    </article>
+
+
+    <h2> Borders 101</h2>
+    <article class="example" id="border">
+        <div>
+            <h3>[2.1]Basic Properties</h3>
+            <ul>
+                <li><b>border-width:</b> 1em;</li>
+                <li><b>border-style:</b> solid;</li>
+                <li><b>border-color:</b> #f4a261;</li>
+            </ul>
+            <p>Also Shorthand:</p>
+            <ul>
+                <li><b>border:</b> 1em solid #f4a261;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[2.2] Border Radius</h3>
+            <ul>
+                <li><b>border:</b> 1em solid #f4a261;</li>
+                <li><b>border-radius:</b> 1.5em;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[2.3] Uneven Border Radius</h3>
+            <ul>
+                <li><b>border:</b> 1em solid #f4a261;</li>
+                <li><b>border-radius:</b> 0% 25%;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[2.4] Border on one side</h3>
+            <ul>
+                <li><b>border-right:</b> 1em solid #f4a261;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[2.5] Circle!</h3>
+            <ul>
+                <li><b>border:</b> 1em solid #f4a261;</li>
+                <li><b>border-radius:</b> 50%;</li>
+            </ul>
+        </div>
+
+    </article>
+
+    <h2>Margins 101</h2>
+    <p>In the following examples margins are applied to the buttons and not to the divs.</p>
+    <article class="example" id="margin">
+      <div>
+            <h3>[3.1] No Margin</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>margin:</b>0;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[3.2] Only Margin Right</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>margin-right:</b>1em;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[3.3] All margins</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>margin:</b>1em;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[3.4] Uneven Margins</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>margin:</b>2em 2em 0.0 0.5em;</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+    <h2>Paddings 101</h2>
+    <p>In the following examples margins are applied to the buttons and not to the divs.</p>
+    <article class="example" id="padding">
+        <div>
+            <h3>[4.1] No Padding</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+        </div>
+
+        <div>
+            <h3>[4.2] Padding on all sides</h3>
+
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>padding:</b> 0.5em; </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h3>[4.3] Vertical and Horizontal</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>padding:</b> 0.5em 1em;</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>[4.4] Individual paddings</h3>
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+
+            <ul>
+                <li><b>padding:</b> 0.5em 1em 2em 3em;</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+</body>
+
+</html>

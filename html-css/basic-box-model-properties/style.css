@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #fff0f3;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8vw;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    background-color: #e76f51;
+    border-width: 0.2em;
+    border-color: #974a36;
+    border-style: solid;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin: 0;
+}
+
+h2{
+    margin: 0.5em;
+}
+
+h3{
+    padding: 1em;
+}
+p,ul{
+    margin: 1em;
+}
+
+
+article{
+    width: auto;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 0.1vw solid #000000;
+    margin: 0.25em 0 0 0;
+}
+
+div{
+    width: 15vw;
+    height: 15vw;
+    box-sizing: border-box;
+}
+
+.example{
+    display: flex;
+}
+
+.example div{
+    display: block;
+}
+
+.example div ul{
+    margin: 0.2em;
+    font-size: 0.75em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.example div h2{
+    width: 100%;
+}
+/* -------------------------------------------------------------------------------- */
+/* Box-Sizing                                                                       */
+/* -------------------------------------------------------------------------------- */
+#boxsizing{
+    display: block;
+}
+
+#boxsizing div{
+    margin: 0.25em;
+    background-color: #f4a261;
+    border: 1em solid #e76f51;
+}
+
+#boxsizing div:nth-of-type(1){
+    box-sizing: border-box;
+}
+
+#boxsizing div:nth-of-type(2){
+    box-sizing: content-box;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Borders                                                                          */
+/* -------------------------------------------------------------------------------- */
+#border div{
+    margin: 0.25em;
+    background-color: #e9c46a;
+}
+
+#border div:nth-of-type(1){
+    border-width: 1em;
+    border-style: solid;
+    border-color:#f4a261;
+}
+
+#border div:nth-of-type(2){
+    border: 1em solid #f4a261;
+    border-radius: 1.5em;
+}
+
+#border div:nth-of-type(3){
+    border: 1em solid #f4a261;
+    border-radius: 0% 25%;
+}
+
+#border div:nth-of-type(4){
+    border-right: 1em solid #f4a261;
+}
+
+#border div:nth-of-type(5){
+    border: 1em solid #f4a261;
+    border-radius: 50% ;
+}
+
+#border div:nth-of-type(5) h3{
+    margin-left: 3em;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Margin                                                                           */
+/* -------------------------------------------------------------------------------- */
+#margin div{
+    margin: 0.25em;
+    background-color: #2a9d8f;
+    border: 1em solid #264653;
+}
+
+#margin div button{
+    margin: 0;
+    border: 1px solid #14252c;
+}
+
+#margin div:nth-of-type(1) button{
+    margin: 0;
+}
+
+#margin div:nth-of-type(2) button{
+    margin-right: 1em;
+}
+
+#margin div:nth-of-type(3) button{
+    margin: 1em;
+}
+
+#margin div:nth-of-type(4) button{
+    margin: 2em 2em 0.0 0.5em;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Padding                                                                          */
+/* -------------------------------------------------------------------------------- */
+#padding div{
+    margin: 0.25em;
+    background-color: #264653;
+    border: 1em solid #14252c;
+    color: #FFFFFF;
+}
+
+#padding div button{
+    margin: 0.2em;
+    border: 1px solid #14252c;
+}
+
+#padding div:nth-of-type(1) button{
+    padding: 0;
+}
+
+#padding div:nth-of-type(2) button{
+    padding: 0.5em;
+}
+
+#padding div:nth-of-type(3) button{
+    padding: 0.5em 1em;
+}
+
+#padding div:nth-of-type(4) button{
+    padding: 0.5em 1em 2em 3em;
+}
