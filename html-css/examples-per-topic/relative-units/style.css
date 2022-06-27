@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+
+html {
+    height: 100%;
+}
+
+body {
+    --light-grey: #e2dfdf;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #43aa8b 0%, #4d908e 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1vw;
+}
+
+header {
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-grey);
+    margin: 0;
+    border: 2px solid black;
+}

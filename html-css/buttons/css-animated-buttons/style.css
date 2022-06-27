@@ -18,21 +18,32 @@ body {
     font-size: 1vw;
 }
 
-header {
+header{
     width: 100%;
     box-sizing: border-box;
     background-color: var(--light-grey);
-    margin: 0;
+    margin: 0em;
     border: 2px solid black;
-
 }
 
-header h1 {
+
+
+header h1{
     font-family: 'Staatliches', cursive;
     font-size: 4em;
 }
 
-article {
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+aside{
+    margin: 2em 0 2em 2em;
+}
+
+article{
     margin-top: 2%;
     margin-left: 20vw;
     width: 60vw;
