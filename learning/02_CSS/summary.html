@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Summary</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+    <h1>CSS - Cascading Style Sheets</h1>
+
+    <p>Used to describe the appearance or visual representation of our documents.</p>
+    <p>When we write CSS we write <b><i>CSS rules</i></b>.</p>
+
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS MDN Reference</a></p>
+
+    <hr>
+    <h2>Colors</h2>
+    <hr>
+
+    <h3>Named</h3>
+    <h3>RGB</h3>
+    <h3>HEX</h3>
+
+    <hr>
+    <h2>Text Properties</h2>
+    <hr>
+    <ul>
+        <li>text-align</li>
+        <li>text-decoration</li>
+        <li>font</li>
+        <li>font-size</li>
+        <li>font-family</li>
+        <li>font-weight</li>
+    </ul>
+
+    <hr>
+    <h2>Units</h2>
+    <hr>
+
+    <h3>Absolute Units</h3>
+    <ul>
+        <li>PX</li>
+        <li>PT</li>
+        <li>CM</li>
+        <li>IN</li>
+        <li>MM</li>
+    </ul>
+
+    <h3>Relative Units</h3>
+    <ul>
+        <li>EM</li>
+        <li>REM</li>
+        <li>VH</li>
+        <li>VW</li>
+        <li>%</li>
+        <li>etc..</li>
+    </ul>
+
+    <h2>CSS Selectors</h2>
+
+    <ul>
+        <li>Element Selector : All elements of a type</li>
+        <li>ID Selector</li>
+        <li>Class Selector</li>
+        <li>Descendant Selector</li>
+        <li>Adjacent Selector</li>
+        <li>Direct-Descendant Selector</li>
+        <li>Direct-Chiled Selector</li>
+        <li>Attribute Selector</li>
+    </ul>
+
+    <h2>Pseudo Classes</h2>
+    <p>Keyword added to a selector that specifies a special state of the selected element.</p>
+    <ul>
+        <li>:active</li>
+        <li>:checked</li>
+        <li>:first</li>
+        <li>:first-child</li>
+        <li>:hover</li>
+        <li>:not()</li>
+        <li>:nth-child</li>
+        <li>:nth-of-type</li>
+        <li>etc..</li>
+    </ul>
+
+    <h2>Pseudo Elements</h2>
+    <p>Keyword added to a selector that lets you style a particular part of the seleceted element(s)</p>
+    <ul>
+        <li>::after</li>
+        <li>::before</li>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::selection (!)</li>
+    </ul>
+
+    <h2>Cascade: ORDER MATTERS! </h2>
+
+    <p>In general </p>
+
+    <h3>Specificity</h3>
+    <p>How the browser decides which rules to apply when there is a conflict.</p>
+    <p>The more specific selector wins despite order.</p>
+    <p><b>ID > CLASS > ELEMENT</b></p>
+
+    <p><a href="https://specificity.keegan.st/">Specificity Calculator Tool!</a></p>
+
+    <h2>The Box Model</h2>
+
+    <p><img src="box_model_1.PNG" alt="box_m_1"></p>
+    <p><img src="box_model_2.PNG" alt="box_m_2"></p>
+    <p><img src="box_model_3.PNG" alt="box_m_3"></p>
+    <p><img src="box_model_4.PNG" alt="box_m_4"></p>
+
+    <p>Things to membah'</p>
+
+    <p>
+        <ul>
+            <li>box-sixing:border-box  : now the width of our element is actually gonna go from border to border (bypass padding?)</li>
+        </ul>
+    </p>
+
+
+    <h2>Inline vs. Block Elements</h2>
+    <p><img src="inline_vs_block.PNG" alt="inline_vs_block"></p>
+
+
+    <h2>Other CSS properties...</h2>
+    
+    <h3>Opacity and the Alpha Channel</h3>
+        <ul>
+            <li>alpha channel -> eg. setting a background with rgba -> affects the background but nothing else</li>
+            <li>opacity for the whole element</li>
+        </ul>
+
+    <h3>The Position Property</h3>
+    <p>Possible values:</p>
+    <ul>
+        <li><b>Static:</b> 
+            <ul>
+                <li>The default value of position.</li>
+                <li>The element is positioned "according to the normal flow of the document.</li>
+                <li>The "top", "right", "bottom", "left" and "z-index" properties have no effect.</li>
+            </ul>
+        </li>
+        <li><b>Relative:</b>
+            <ul>
+                <li>The element is positioned "according to the normal flow of the document. </li>
+                <li>The "top", "right", "bottom", "left" and "z-index" properties can be used to offset the element <i>relative to itself</i>.</li>
+                <li>The offset does not affect the position of any other elements.</li>
+            </ul>
+        </li>
+        <li><b>Absolute:</b>
+            <ul>
+                <li>The elements is removed from the "normal document flow".</li>
+                <li>No space is created for the element in the page layout.</li>
+                <li>It is position relative to its closest <b>positioned</b> ancestor, if any; otherwise, it is placed relative to the initial "containing block".
+                    <ul>
+                        <li><b>Positioned</b> means that the ancestor has a value which is <i>not</i> static.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><b>Fixed:</b>
+            <ul>
+                <li>The element is removed from the "normal document flow".</li>
+                <li>No space is created for the element in the page layout.</li>
+                <li>The element is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a "transform", "perspective" or "filter" property set to something other than "none".</li>
+            </ul>
+        </li>
+        <li><b>Sticky:</b>
+            <ul> 
+                <li> "If you want something to start out not fixed and then get fixed later when you scroll past it."</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>CSS Transitions</h3>
+
+    <h3>The Power of CSS Transforms</h3>
+
+    <h2> FlexBox </h2>
+
+    <p>To turn on FlexBox:</p>
+    <ul>
+        <li>Set <b>[display: flex]</b> on the parent element.</li>
+    </ul>
+
+    <h3>Flex-Direction</h3>
+
+    <ul>
+        <li>To decide the <i>main axis direction</i> in our container.</li>
+        <li>The default is <b>[flex-direction: row]</b>. </li>
+        <li>Possible values for <b>flex-direction</b>:
+            <ul>
+                <li>[flex-direction: row]</li>
+                <li>[flex-direction: row-reverse]</li>
+                <li>[flex-direction: column]</li>
+                <li>[flex-direction: column-reverse]</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Justify-Content</h3>
+    <ul>
+        <li>Determines how the content is distributed across the main axis.</li>
+        <li>The default value is <b>[justify-content:flex-start]</b>.</li>
+        <li>Some of the possible values for <b>justify-content</b>:
+            <ul>
+            <li>[justify-content: center] 
+                <ul>
+                    <li>Pack items around the center.</li>
+                </ul> 
+            </li>
+            <li>[justify-content: start]
+                <ul>
+                    <li> Pack items from the start.</li>
+                </ul>
+            </li>
+            <li>[justify-content: end] 
+                <ul>
+                    <li>Pack items from the end.</li>
+                </ul>
+            </li>
+            <li>[justify-content: flex-start] 
+                <ul>
+                    <li>Pack flex items from the start.</li>
+                </ul>
+            </li>
+            <li>[justify-content: flex-end]
+                <ul>
+                    <li>Pack flex items from the end.</li>
+                </ul>
+            </li>
+            <li>[justify-content: left] 
+                <ul>
+                    <li>Pack items from the left.</li>
+                </ul>
+            </li>
+            <li>[justify-content: right]
+                <ul>
+                    <li>Pack items from the right.</li>
+                </ul>
+            </li>
+            <li>[justify-content: normal]
+                <ul>
+                    <li>Normal alignment.</li>
+                </ul>
+            </li>
+            <li>[justify-content: space-around]
+                <ul>
+                    <li>Distribute items evenly. The first item is flush with the start, the last is flush with the end.</li>
+                </ul>
+            </li>
+            <li>[justify-content: space-evenly]
+                <ul>
+                    <li>Distribute items evenly. Items have a half-size space on either end.</li>
+                </ul>
+            </li>
+            <li>[justify-content: stretch]
+                <ul>
+                    <li>Distribute items evenly. Items have equal space around them.</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li></li>
+    </ul>
+    <h3>Flex-Wrap</h3>
+    <ul>
+        <li>Determines wheter our elements are going to wrap along the main axis unto a new line if the flex-direction is row/horizontal or a new column if the flex-direction is column/vertical.</li>
+    </ul>
+    <h3>Align-Items</h3>
+    <ul>
+        <li>Distribute items along the cross-axis. (vs. justify-content which distributes along the main axis) </li>
+    </ul>
+    <h3>Flex-Basis</h3>
+    <ul>
+        <li>Defines the initial size of an element before additional space is distributed.</li>
+        <li>Flex basis gives a width or height across the flex main-axis.</li>
+        <li>Other widths/heights given for the main axis will be ignored in favor of flex-basis.</li>
+    </ul>
+    <h3>Flex-Grow</h3>
+    <ul>
+        <li>>Controls the amount of available space an element should take up if there is available space.</li>
+        <li>Accepts a unit-less number value.</li>
+        <li></li>
+    </ul>
+    <h3>Flex-Shrink</h3>
+    <ul>
+        <li>If items are larger than the container; they shrink according to <b>flex-shrink</b>.</li>
+        <li>Accepts a unit-less number value.</li>
+        <li></li>
+    </ul>
+    <h3>Flex Shorthand</h3>
+    <ul>
+        <li>It exists.</li>
+        <li>Looks confusing.</li>
+        <li>Lets not do that.</li>
+    </ul>
+
+
+    <h2>Media Queries</h2>
+    <ul>
+        <li>https://devfacts.com/media-queries-breakpoints-2022/</li>
+        <li>https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</li>
+    </ul>
+
+    <h3>CSS Tools: Reset CSS</h3>
+    https://meyerweb.com/eric/tools/css/reset/
+
+</body>
+
+</html>

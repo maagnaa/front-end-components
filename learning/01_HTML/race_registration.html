@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+    <!-- Page Title -->
+    <h1>Race Registration!</h1>
+    <!-- Registration Form -->
+    <form action="/registration">
+        <!-- First Name and Last Name -->
+        <p>
+            <label for="first_name">First Name</label>
+            <input id="first_name" name="first_name" type="text" required>
+        </p>
+
+        <p>
+            <label for="last_name">Last Name</label>
+            <input id="last_name" name="last_name" type="text" required>
+        </p>
+
+
+        <!-- Distance -->
+        <p><b>Select a distance</b></p>
+        <p>
+            <label for="select_5k_run">Fun 5k Run!</label>
+            <input id="select_5k_run" type="radio" name="distance" value="5k_run">
+        </p>
+
+        <p>
+            <label for="select_half_marathon">Half Marathon</label>
+            <input id="select_half_marathon" type="radio" name="distance" value="half_marathon">
+        </p>
+
+        <p>
+            <label for="select_full_marathon">Full Marathon</label>
+            <input id="select_full_marathon" type="radio" name="distance" value="full_marathon">
+        </p>
+
+
+        <!-- Age Group -->
+        <p>
+            <label for="age_group"><b>Select your Age Group</b></label>
+        </p>
+        <p>
+            <select name="age_group" id="age_group">
+                <option value="lt_18">Under 18 years old</option>
+                <option value="18_29"> 18 to 29 years old</option>
+                <option value="30_39"> 30 to 39 years old</option>
+                <option value="40_49"> 40 to 49 years old</option>
+                <option value="50_59"> 50 to 59 years old</option>
+                <option value="gt_60">Over 60 years old</option>
+            </select>
+        </p>
+
+        <!-- Email and Password -->
+        <p><b>Register your account</b></p>
+        <p>
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="4" maxlength="10">
+        </p>
+
+        <button>Submit Registration!</button>
+    </form>
+
+
+</body>
+
+</html>

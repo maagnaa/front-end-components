@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* { box-sizing: border-box;}
+
+html, body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2vw;
+}
+
+/* Ordered and Unordered Lists */
+ol, ul {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-right: 5vw;
+  margin-left: 1vw;
+  font-size: 2vh;
+}
+
+/* Heading 1 */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 6vh;
+}
+/* Heading 2 */
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 5vh;
+    color: $purple;
+}
+/* Heading 3 */
+h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3vh;
+}
+/* Paragraph */
+p {
+  font-size: 2vh;
+  }

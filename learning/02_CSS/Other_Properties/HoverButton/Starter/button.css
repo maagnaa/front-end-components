@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #1b4332 0%, #2d6a4f 100%);
+}
+
+
+
+button {
+  --color: #52b788;
+  --hover-color: #f9c74f;
+  --hover-border: #d9ed92;
+  --transition: 200ms;
+  background: none;
+  color: var(--color);
+  border: 0.2rem solid var(--color);
+  font-size: 1.5em;
+  padding: 0.5em 2em; 
+  transition: color var(--transition), border var(--transition), transform var(--transition), box-shadow var(--transition);
+} 
+
+button:hover{
+  color: var(--hover-color);
+  border-color: var(--hover-border);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover-color);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}

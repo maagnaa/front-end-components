@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds Table</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+    <h1>The Heaviest Birbs!</h1>
+
+
+    <h2>Table 1</h2>
+    <hr>
+    <!-- MNEMONIC AID -->
+    <!-- td : Table Data Cell Element. -->
+    <!-- tr : Table Row-->
+    <!-- th : Table Header-->
+
+    <table>
+        <!-- Table Head -->
+        <thead>
+            <!-- Row 1 -->
+            <tr>
+                <th>Name</th>
+                <th>Average Mass [kg]</th>
+                <th>Maximum Mass [kg]</th>
+                <th>Flighted?</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <!-- Row 2 -->
+            <tr>
+                <td>Ostrich</td>
+                <td>140</td>
+                <td>156.8</td>
+                <td>No</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>No</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>39</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table> 
+
+
+    <h2>Table 2: with rowspan and colspan</h2>
+    <hr>
+
+    <table>
+        <!-- Table Head -->
+        <thead>
+            <!-- thead - Row 1 -->
+            <tr>
+                <th rowspan="2">Birb</th>
+                <th colspan="2">Average Mass</th>
+                <th rowspan="2">Fligthed?</th>
+            </tr>
+            <!-- thead - Row 2-->
+            <tr>
+                <th>[kg]</th>
+                <th>[lbs]</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <!-- tbody - Row 1 -->
+            <tr>
+                <td>Ostrich</td>
+                <td>140</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <!-- tbody - Row 2 -->
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+            <!-- tbody - Row 3 -->
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table> 
+
+
+</body>
+
+</html>

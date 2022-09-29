@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #fff0f3;
+    margin-left: 0;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+h1{
+    width: 600px;
+    background-color: #e76f51;
+    border-width: 5px;
+    border-color: #974a36;
+    border-style: solid;
+    text-align: center;
+
+}
+
+h2{
+    text-align: left;
+}
+
+#one {
+    background-color: #e9c46a ;
+    border-width: 5px;
+    border-color: #b08416;
+    border-style: dotted;
+    box-sizing: border-box;
+}
+
+#two{
+    background-color: #2a9d8f ;
+    border-width: 5px;
+    border-color: #134841;
+    border-style: dashed;
+    box-sizing: content-box;
+}
+
+#three{
+    background-color: #2a9d8f ;
+    border-width: 5px;
+    border-color: #134841;
+    border-style: dashed;
+    box-sizing: content-box;
+    padding-left: 100px;
+    padding-right: 10px;
+    margin: 100px 0 50px 200px;
+}
+
+
+#four{
+    background-color: #264653;
+    /* Shorthand */
+    border: 10px solid #152930;
+    border-radius: 0% 25%;
+    padding: 25px;
+}
+
+#padding{
+    height: auto;
+    background-color: #264653;
+    /* Shorthand */
+    border: 10px solid #152930;
+    padding: 25px;
+}
+
+#bt1{
+    padding: 20px;
+}
+
+#bt2{
+    padding: 5px 10px;
+}
+
+#bt3{
+    padding: 1px 20px 50px;
+}
+
+#bt4 {
+    padding: 5px 10px 0px 20px;
+}
+
+.inlineblockdemo{
+    background-color: #2a9d8f;
+    border-width: 5px;
+    border-color: #134841;
+    border-style: solid;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+#inline h3{
+    border-style: solid;
+    display: inline;
+}
+
+#inline span{
+    border-style: solid;
+}
+
+#block h3{
+    border-style: solid;
+}
+
+#block span{
+    border-style: solid;
+    display: block;
+}
+
+#inlineblock h3{
+    border-style: solid;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #fff0f3;
+}
+
+button {
+    background-color: #b5838d;
+    color: #ffcdb2;
+}
+
+h1,
+h2 {
+    color: #6d6875;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+/* ID Selector */
+#signup {
+    background-color: #e5989b;
+    color: #6d6875;
+}
+
+/* Class Selector */
+.tag {
+    background-color: #6d6875;
+    font-size: 0.5em;
+    letter-spacing: 0.2em;
+}
+
+/* Descendant Selector */
+/* Syntax PE CE { ... } */
+/* Will style of elements of type CE that are descendants of element type PE */
+/* Eg. [ li a {...} ] -> Style all anchor elements inside li elements */
+
+span {
+    color: #c0b5f8;
+}
+
+span a {
+    color: #e5989b;
+    text-decoration: none;
+
+}
+
+footer a {
+    color: #b5838d;
+}
+
+/* Direct Descendant Selector */
+/* The first child that comes after the parent ?? */
+/* Eg. Every button that comes right after an H2 */
+h2+button {
+    background-color: black;
+}
+
+/* Direct Children */
+/* In the following example we are selecting from the anchor tags within the footer */
+/* the one anchor tag that is a direct descendant (1 down) of the footer */
+/* There are other anchor tags that come before, but these are nesten in a ul and */
+/* as such, not direct children. */
+footer>a {
+    color: #006d77;
+}
+
+/* Attribute Selector */
+
+input {
+    color: #006d77;
+    font-size: 1.5em;
+
+}
+
+input[type="password"] {
+    color: #5e548e;
+}
+
+/* Pseudo-Classes */
+
+/* :hover */
+/* Eg. All anchor tags when they are hovered */
+
+a:hover {
+    color: #2a9d8f;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #006d77;
+    color: #2a9d8f;
+}
+
+button:active {
+    background-color: aqua;
+}
+
+/* Hover button inside of a post */
+
+.post button:hover {
+    background-color: #5e548e;
+    color: #FFFFF48F;
+}
+
+
+/* Nth of Type ->  */
+
+.post {
+    background-color: #483e59;
+    color: #c0b5f8
+}
+
+.post:nth-of-type(2n) {
+    background-color: #282331;
+}
+
+
+/* Pseudo Elements */
+
+/* First Letter */
+h2::first-letter {
+    color: #fff0f3;
+    font-size: 1.5em;
+}
+
+/* Selection */
+/* I LOVE THIS ONE */
+p::selection {
+    background-color: #b5838d;
+}

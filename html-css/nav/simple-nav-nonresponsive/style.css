@@ -81,3 +81,31 @@ body {
 
 }
 
+@media (max-width: 600px) {
+    .topnav{
+        font-size:  8px;
+    }
+
+    .topnavend input{
+        font-size: 6px;
+    }
+
+    .topnavend button {
+        font-size: 6px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .topnav{
+        font-size:  6px;
+    }
+
+    .topnavend input{
+        font-size: 4px;
+    }
+
+    .topnavend button {
+        font-size: 4px;
+    }
+}

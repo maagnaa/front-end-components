@@ -1,0 +1,29 @@
+html, body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: azure;
+    color:teal;
+
+  }  
+
+h1 {
+    color:teal;
+}
+
+h2 {
+    color:darkslategrey;
+}
+
+h3 {
+    color:darkslategray;
+}
+
+ul {
+}
+
+button {
+    background-color: aquamarine;
+}
+
+p {
+    color:teal;
+}

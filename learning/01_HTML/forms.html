@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+    <h1>Forms! Demo </h1>
+
+    <!-- Action Attribute: Specify where the data should be sent when the form is submitted. -->
+    <!-- -->
+    <h2>Basic Forms: text, password, color, number, time, etc..</h2>
+
+    <form action="/tacos">
+        <button> PLEASE DO NOT SUBMIT THE FORM! </button>
+        <p>
+            <label for="username">Your Username:</label>
+            <input id="username" type="text" placeholder="Username" name="username">
+        </p>
+
+        <p>
+            <label for="password">Your Password:</label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+
+        <p>
+            <label for="color">Pick your favourite color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+
+        <p>
+            <label for="number">Pick your lucky number:</label>
+            <input id="number" type="number" placeholder="Number" name="number">
+        </p>
+
+        <p>
+            <label for="time">Select your desired appointment time:</label>
+            <input id="time" type="time" name="timeslot">
+        </p>
+        <button type="button">Plain button, won't submit.</button>
+        <button type="reset">Reset form!</button>
+        <button>Submit!</button>
+
+
+        <!-- Submit Example: -->
+        <!-- file:///C:/tacos?username=babb&password=babbpass&color=%2336ad34&number=23&timeslot=12%3A30-->
+        <!-- This is a get request, thats why the pass security is shit. Other requests are better. -->
+    </form>
+
+
+    <h2> CheckBox Memes</h2>
+    <p>Do you agree with the terms of service?</p>
+    <form action="/tos">
+        <!-- CheckBox : Can Select Both -->
+        <p>
+            <label for="agree_tos">Agree</label>
+            <input id="agree_tos" type="checkbox" name="agree_tos">
+        </p>
+
+        <p>
+            <label for="disagree_tos">Disagree</label>
+            <input id="disagree_tos" type="checkbox" name="disagree_tos">
+        </p>
+
+        <button>Submit!</button>
+    </form>
+
+    <h2> Radio Bois </h2>
+    <p>Select your favourite pet:</p>
+    <form action="/pets">
+        <!-- Radio : Can Only Select One -->
+        <!-- Need to add unique value attribute to each to send something meaningful when the form is submitted-->
+        <p>
+            <label for="select_cat">Cat</label>
+            <input id="select_cat" type="radio" name="select_pet" value="cat">
+        </p>
+
+        <p>
+            <label for="select_dog">Dog</label>
+            <input id="select_dog" type="radio" name="select_pet" value="dog">
+        </p>
+
+        <p>
+            <label for="select_fish">Fish</label>
+            <input id="select_fish" type="radio" name="select_pet" value="fish">
+        </p>
+
+        <p>
+            <label for="select_snake">Snake</label>
+            <input id="select_snake" type="radio" name="select_pet" value="snake">
+        </p>
+        <button>Submit!</button>
+    </form>
+
+    <h2>Select: Dropdown Menu</h2>
+    <form action="/eg">
+        <!-- Select: Dropdown Menu  -->
+        <p>
+            <label for="size">Select your size:</label>
+        <p>
+            <select name="size" id="size">
+                <option value="xxs">XXS</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </p>
+        </p>
+        <button>Submit!</button>
+    </form>
+
+    <!-- Range: Slider -->
+    <h2>Sliders: Input with attr. type=range </h2>
+    <form action="/cheese">
+        <p>
+            <label for="cheese"> How much cheese?</label>
+            <input id="cheese" type="range" min="1" max="100" value="75" name="cheese">
+        </p>
+    </form>
+    <!-- Text Area: Multiline Text-->
+    <h2>Textarea</h2>
+    <form action="/additonalreq">
+        <p>
+        <label for="requests">Requests?</label><br>
+        <textarea type="requests" rows="10" cols="40" name="requests" placeholder="Type any additional requests here."></textarea>
+        </p>
+    </form>
+
+    <!-- Validations Demo -->
+    <h2>Validations Demo</h2>
+
+    <h3>Required Input</h3>
+    <form action="/validate">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input id="first" name="first" type="text" required>
+            <button>Submit!</button>
+        </p>
+    </form>
+
+    <h3>Min. &amp; Max. Text Length</h3>
+    <form action="/validate">
+        <p>
+            <label for="Username">Enter Username</label>
+            <input id="Username" name="Username" type="text" minlength="4" maxlength="10">
+            <button>Submit!</button>
+        </p>
+    </form>
+
+    <!-- min and max attributes for numeric values -->
+    <!-- pattern attribute for regex -->
+    <!-- type attribute = url for urls!-->
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Box Model Memes! </h1>
+
+    <p>All divs are given width: 400px and height: 400px, as well as 10px margins. </p>
+
+    <div id="one">
+        <h2>div id="one"</h2>
+
+        <ul>
+            <li> border-width: 5px;</li>
+            <li> border-style: dotted; </li>
+            <li> box-sizing: border-box;</li>
+        </ul>
+
+    </div>
+    <div id="two">
+        <h2> div id="two"</h2>
+
+        <ul>
+            <li>border-width: 5px;</li>
+            <li>border-style: dashed;</li>
+            <li>box-sizing: content-box;</li>
+        </ul>
+
+    </div>
+    <div id="three">
+        <h2>div id="three"</h2>
+        <ul>
+            <li>border-width: 5px;</li>
+            <li>border-style: dashed;</li>
+            <li>box-sizing: content-box;</li>
+            <li>padding-left: 100px;</li>
+            <li>padding-right: 10px;</li>
+            <li>margin: 100px 0 50px 200px; </li>
+        </ul>
+
+    </div>
+
+    <div id="four">
+        <h2>div id="four"</h2>
+        <ul>
+            <li>background-color: #264653;</li>
+            <li>border: 10px solid #152930; (Shorthand)</li>
+            <li>border-radius: 0% 25%</li>
+            <li>padding: 25px;</li>
+        </ul>
+
+    </div>
+
+    <div id="padding">
+        <h2>Padding</h2>
+        <h3>All sides</h3>
+        <button id="bt1">padding: 20px</button>
+
+        <h3>vertical | horizontal</h3>
+        <button id="bt2">padding: 5px 10px </button>
+
+        <h3>top | horizontal | bottom</h3>
+        <button id="bt3">padding: 1px 20px 50px </button>
+
+        <h3>top | right | bottom | left</h3>
+        <button id="bt4">padding: 5px 10px 0px 20px</button>
+    </div>
+
+
+    <div class="inlineblockdemo" id="inline">
+        <h2>Inline Elements</h2>
+        <h3>h3.1</h3>
+        <h3>h3.2</h3>
+        <span>Span 1</span>
+        <span>Span 2</span>
+    </div>
+
+
+    <div class="inlineblockdemo" id="block">
+        <h2>Block Elements</h2>
+        <h3>h3.1</h3>
+        <h3>h3.2</h3>
+        <span>Span 1</span>
+        <span>Span 2</span>
+    </div>
+
+    <div class="inlineblockdemo" id="inlineblock">
+        <h2>Inline-Block Elements</h2>
+        <h3>h3.1</h3>
+        <h3>h3.2</h3>
+    </div>
+</body>
+
+</html>
